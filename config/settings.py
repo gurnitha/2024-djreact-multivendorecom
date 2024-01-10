@@ -53,6 +53,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "jazzmin",
+
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -61,10 +63,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     # Locals
-    'customer.apps.CustomerConfig',
-    'store.apps.StoreConfig',
-    'userauths.apps.UserauthsConfig',
-    'vendor.apps.VendorConfig'
+    "customer.apps.CustomerConfig",
+    "store.apps.StoreConfig",
+    "userauths.apps.UserauthsConfig",
+    "vendor.apps.VendorConfig"
 ]
 
 MIDDLEWARE = [

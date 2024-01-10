@@ -105,3 +105,6 @@ Membuat multivendor ecommerce menggunakan Django dan React
         modified:   README.md
 
         Note: superadmin sukses login :)
+
+
+## 04. DJANGO-JAZZMIN MODULE
