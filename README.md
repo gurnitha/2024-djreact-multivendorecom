@@ -123,3 +123,6 @@ Membuat multivendor ecommerce menggunakan Django dan React
         modified:   README.md
         modified:   config/settings.py
         modified:   config/urls.py
+
+
+## 05. USERS MODEL, PROFILE MODEL, AND SIGNALS
