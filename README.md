@@ -117,3 +117,9 @@ Membuat multivendor ecommerce menggunakan Django dan React
 
 
 ## 05. STATIC AND MEDIA FILES
+
+#### 1. Configure path for static files
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
