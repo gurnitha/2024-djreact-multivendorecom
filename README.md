@@ -78,3 +78,7 @@ Membuat multivendor ecommerce menggunakan Django dan React
 
 ## 03. DATABASE
 
+#### 1. Create Postgres database and connect it with the project
+
+        modified:   README.md
+        modified:   config/settings.py
