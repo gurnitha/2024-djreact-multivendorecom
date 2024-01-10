@@ -24,3 +24,13 @@ Membuat multivendor ecommerce menggunakan Django dan React
 
 
 ## 02. DJANGO PROJECT & APPS
+
+#### 1. Create proyek django 'config'
+
+        modified:   README.md
+        new file:   backend/config/__init__.py
+        new file:   backend/config/asgi.py
+        new file:   backend/config/settings.py
+        new file:   backend/config/urls.py
+        new file:   backend/config/wsgi.py
+        new file:   backend/manage.py
