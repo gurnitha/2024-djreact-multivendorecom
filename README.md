@@ -93,3 +93,15 @@ Membuat multivendor ecommerce menggunakan Django dan React
 #### 3. Create .env.example file
 
         modified:   README.md
+
+#### 4. Run migrations and createsuperadmin
+
+        (venv312422) λ python manage.py createsuperuser
+        Username (leave blank to use 'ing'): superadmin
+        Email address: superadmin@mail.com
+        Password:superadmin@mail.com
+        Password (again):superadmin@mail.com
+
+        modified:   README.md
+
+        Note: superadmin sukses login :)
