@@ -10,20 +10,42 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import os 
 from pathlib import Path
+
+# Step 1. Setup environ variables
+# import dotenv
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Step 2. Setup environ variables
+# dotenv.read_dotenv()
+load_dotenv()  # take environment variables from .env.
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-x!p99y6t&mux52q@zp-k=bi)+uh++5t0e#^axsibugn@jskfje"
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = os.environ.get('DEBUG') == 'True'
+
+# # Build paths inside the project like this: BASE_DIR / 'subdir'.
+# BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+# # Quick-start development settings - unsuitable for production
+# # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
+
+# # SECURITY WARNING: keep the secret key used in production secret!
+# SECRET_KEY = ""
+
+# # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -87,15 +109,27 @@ WSGI_APPLICATION = "config.wsgi.application"
 #     }
 # }
 
+# # PostgreSQL DB
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': '2024_djreact_multivendorecom',
+#         'USER': 'postgres',
+#         'PASSWORD': 'xxx',
+#         'HOST': 'localhost',
+#         'PORT': '5433'
+#     }
+# }
+
 # PostgreSQL DB
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '2024_djreact_multivendorecom',
-        'USER': 'postgres',
-        'PASSWORD': 'xxx',
-        'HOST': 'localhost',
-        'PORT': '5433'
+        'NAME': os.environ.get('DATABASE_NAME'),
+        'USER': os.environ.get('DATABASE_USER'),
+        'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
+        'HOST': os.environ.get('DATABASE_HOST'),
+        'PORT': os.environ.get('DATABASE_PORT')
     }
 }
 

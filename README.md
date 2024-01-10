@@ -82,3 +82,10 @@ Membuat multivendor ecommerce menggunakan Django dan React
 
         modified:   README.md
         modified:   config/settings.py
+
+#### 2. Protecting sensitive file
+
+        modified:   README.md
+        modified:   config/settings.py
+
+        :)
