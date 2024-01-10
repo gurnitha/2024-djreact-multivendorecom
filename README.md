@@ -108,3 +108,9 @@ Membuat multivendor ecommerce menggunakan Django dan React
 
 
 ## 04. DJANGO-JAZZMIN MODULE
+
+#### 1. Install django-jazzmin and configure it
+
+        new file:   .env.example
+        modified:   README.md
+        modified:   config/settings.py

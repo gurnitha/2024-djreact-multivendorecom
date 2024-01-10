@@ -175,3 +175,14 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# DJANGO-JAZZMIN
+JAZZMIN_SETTINGS = {
+    'site_title':'RAI Store',
+    'site_header':'RAI Store',
+    'site_brand':'RAI Store',
+    'welcome_sign':'Welcome to Rai Store',
+    'show_ui_builder':True,
+    'show_sidebar':True,
+    'copyright':'<span style="color:#007BFF;">RAI Store</span>'
+}
