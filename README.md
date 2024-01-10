@@ -89,3 +89,7 @@ Membuat multivendor ecommerce menggunakan Django dan React
         modified:   config/settings.py
 
         :)
+
+#### 3. Create .env.example file
+
+        modified:   README.md
