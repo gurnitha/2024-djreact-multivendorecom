@@ -193,3 +193,6 @@ JAZZMIN_SETTINGS = {
     'show_sidebar':True,
     'copyright':'<span style="color:#007BFF;">RAI Store</span>'
 }
+
+
+AUTH_USER_MODEL = 'userauths.User'

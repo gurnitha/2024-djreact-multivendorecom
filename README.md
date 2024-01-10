@@ -126,3 +126,38 @@ Membuat multivendor ecommerce menggunakan Django dan React
 
 
 ## 05. USERS MODEL, PROFILE MODEL, AND SIGNALS
+
+#### 1. Create custom User and Profile model
+
+        modified:   config/settings.py
+        modified:   userauths/admin.py
+        new file:   userauths/migrations/0001_initial.py
+        modified:   userauths/models.py
+
+        Note:
+
+        Encountered issue like this after running migrate:
+
+        raise InconsistentMigrationHistory(
+        django.db.migrations.exceptions.InconsistentMigrationHistory: Migration admin.0001_initial is applied before its dependency userauths.0001_initial on database 'default'.
+
+        Issue solved by:
+
+        1. Dis-able this:
+        INSTALLED_APPS = [
+            #"jazzmin",
+
+            #"django.contrib.admin",
+        ]
+
+        2. Dis-able this:
+        urlpatterns = [
+            #path("admin/", admin.site.urls),
+        ]
+
+        3. Re-run migrations
+
+        4. Create new superuser > login
+
+        :)
+
