@@ -161,3 +161,24 @@ Membuat multivendor ecommerce menggunakan Django dan React
 
         :)
 
+        NEXT: 13 (SIGNALS)
+
+#### 2. Create signals
+
+        modified:   README.md
+        new file:   userauths/migrations/0002_alter_profile_user.py
+        modified:   userauths/models.py
+
+        Note:
+
+        1. When ever a new user created, user profile also created automatically.
+        2. Tested via terminal: 
+
+        (venv312422) λ python manage.py createsuperuser
+        Email: testusersignals@mail.com
+        Username: testusersignals
+        Password: testusersignals@mail.com
+        Password (again): testusersignals@mail.com
+
+        :)
+
